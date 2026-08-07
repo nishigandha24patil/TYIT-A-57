@@ -1,0 +1,344 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#151922;
+    font-family:'Poppins',sans-serif;
+    color:white;
+
+}
+
+.container{
+
+    width:90%;
+    margin:40px auto;
+
+    background:#20252f;
+
+    border-radius:30px;
+
+    padding:40px 60px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.5);
+
+}
+
+/* ---------------- NAVBAR ---------------- */
+
+header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.logo{
+
+    font-size:32px;
+
+    font-weight:bold;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-left:30px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#00e5ff;
+
+}
+
+.active{
+
+    color:#00e5ff;
+
+}
+
+/* ---------------- HERO ---------------- */
+
+.hero{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:80px;
+
+}
+
+.left{
+
+    width:50%;
+
+}
+
+.left h3{
+
+    font-size:35px;
+
+}
+
+.left h1{
+
+    font-size:70px;
+
+    margin:10px 0;
+
+}
+
+.left h2{
+
+    font-size:38px;
+
+}
+
+.left span{
+
+    color:#00e5ff;
+
+}
+
+.left p{
+
+    margin-top:25px;
+
+    color:#cfcfcf;
+
+    line-height:30px;
+
+}
+
+/* ---------------- ICONS ---------------- */
+
+.icons{
+
+    margin-top:35px;
+
+}
+
+.icons a{
+
+    width:50px;
+
+    height:50px;
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border:2px solid #00e5ff;
+
+    border-radius:50%;
+
+    margin-right:15px;
+
+    color:#00e5ff;
+
+    text-decoration:none;
+
+    transition:.4s;
+
+}
+
+.icons a:hover{
+
+    background:#00e5ff;
+
+    color:black;
+
+    box-shadow:0 0 20px cyan;
+
+}
+
+/* ---------------- BUTTON ---------------- */
+
+button{
+
+    margin-top:35px;
+
+    border:none;
+
+    padding:15px 45px;
+
+    border-radius:50px;
+
+    background:#00e5ff;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    box-shadow:0 0 25px cyan;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/* ---------------- RIGHT IMAGE ---------------- */
+
+.right{
+
+    width:45%;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+/* ---------------- HEXAGON ---------------- */
+
+.hexagon{
+
+    width:360px;
+
+    height:400px;
+
+    background:#00e5ff;
+
+    clip-path:polygon(
+    25% 6%,
+    75% 6%,
+    100% 50%,
+    75% 94%,
+    25% 94%,
+    0% 50%
+    );
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:
+    0 0 20px cyan,
+    0 0 40px cyan,
+    0 0 80px cyan;
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+.hexagon img{
+
+    width:320px;
+
+    height:390px;
+
+    object-fit:cover;
+
+    clip-path:inherit;
+
+}
+
+/* ---------------- FLOAT ANIMATION ---------------- */
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media(max-width:900px){
+
+.hero{
+
+flex-direction:column-reverse;
+
+text-align:center;
+
+}
+
+.left{
+
+width:100%;
+
+margin-top:40px;
+
+}
+
+.right{
+
+width:100%;
+
+}
+
+.left h1{
+
+font-size:50px;
+
+}
+
+.left h2{
+
+font-size:30px;
+
+}
+
+.hexagon{
+
+width:280px;
+
+height:320px;
+
+}
+
+.hexagon img{
+
+width:250px;
+
+height:300px;
+
+}
+
+}
