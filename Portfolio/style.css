@@ -15,6 +15,7 @@ body{
 .container{
 
     width:90%;
+    height:90vh;
     margin:40px auto;
 
     background:#20252f;
@@ -41,8 +42,7 @@ header{
 
 .logo{
 
-    font-size:32px;
-
+    font-size:25px;
     font-weight:bold;
 
 }
@@ -50,15 +50,11 @@ header{
 nav a{
 
     color:white;
-
     text-decoration:none;
-
     margin-left:30px;
-
     font-weight:500;
-
     transition:.3s;
-
+    font-size:18px;
 }
 
 nav a:hover{
@@ -83,7 +79,7 @@ nav a:hover{
 
     align-items:center;
 
-    margin-top:80px;
+    margin-top:50px;
 
 }
 
@@ -95,22 +91,16 @@ nav a:hover{
 
 .left h3{
 
-    font-size:35px;
-
+    font-size:30px;
 }
 
 .left h1{
 
-    font-size:70px;
-
+    font-size:50px;
     margin:10px 0;
-
 }
-
 .left h2{
-
-    font-size:38px;
-
+    font-size:30px;
 }
 
 .left span{
@@ -133,51 +123,36 @@ nav a:hover{
 
 .icons{
 
-    margin-top:35px;
+    margin-top:20px;
 
 }
 
 .icons a{
-
     width:50px;
-
     height:50px;
-
     display:inline-flex;
-
     justify-content:center;
-
     align-items:center;
-
     border:2px solid #00e5ff;
-
     border-radius:50%;
-
     margin-right:15px;
-
     color:#00e5ff;
-
     text-decoration:none;
-
     transition:.4s;
 
 }
 
 .icons a:hover{
-
     background:#00e5ff;
-
     color:black;
-
     box-shadow:0 0 20px cyan;
-
 }
 
 /* ---------------- BUTTON ---------------- */
 
 button{
 
-    margin-top:35px;
+    margin-top:15px;
 
     border:none;
 
