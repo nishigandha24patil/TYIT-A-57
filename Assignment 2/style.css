@@ -1,0 +1,552 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Body = complete webpage */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+.navbar {
+    padding: 12px 0;
+
+    /* Small shadow below navbar */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Website logo */
+.navbar-brand {
+    color: #477a3c;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/* Navigation links */
+.nav-link {
+    color: #444;
+    margin-left: 10px;
+}
+
+
+/* Mouse hover */
+.nav-link:hover {
+    color: #477a3c;
+}
+
+
+
+/* =====================================================
+   HERO
+   ===================================================== */
+
+.hero {
+
+    /* External background image */
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)
+        ),
+        url("https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=1600&q=85");
+
+
+    /* Image covers complete section */
+    background-size: cover;
+
+
+    /* Center image */
+    background-position: center;
+
+
+    /* Hero height */
+    min-height: 480px;
+
+
+    /* Put content vertically in center */
+    display: flex;
+    align-items: center;
+}
+
+
+/* Hero text */
+.hero-text {
+    color: white;
+    padding: 50px 0;
+}
+
+
+/* Main heading */
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+
+/* Hero paragraph */
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+
+/* =====================================================
+   COMMON SECTION
+   ===================================================== */
+
+.section {
+    padding: 70px 0;
+}
+
+
+/* All section headings */
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+
+
+/* =====================================================
+   CATEGORIES
+   ===================================================== */
+
+.category {
+    text-align: center;
+
+    /* Smooth hover animation */
+    transition: 0.3s;
+}
+
+
+.category img {
+
+    /* Image size */
+    width: 110px;
+    height: 110px;
+
+    /* Makes image circular */
+    border-radius: 50%;
+
+    /* Image fills the circle */
+    object-fit: cover;
+
+    /* Green border */
+    border: 2px solid #b8d5ae;
+}
+
+
+.category h3 {
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+
+/* Move category upward on hover */
+.category:hover {
+    transform: translateY(-5px);
+}
+
+
+
+/* =====================================================
+   PRODUCTS
+   ===================================================== */
+
+.products {
+    background: #fafafa;
+}
+
+
+/* Bootstrap card */
+.card {
+    height: 100%;
+    border: 1px solid #ddd;
+
+    /* Rounded corners */
+    border-radius: 8px;
+
+    /* Hide image outside rounded corners */
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+
+/* Product image */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+
+/* Card heading */
+.card-title {
+    font-size: 16px;
+}
+
+
+/* Product price */
+.price {
+    color: #477a3c;
+    font-weight: bold;
+}
+
+
+/* Card hover */
+.card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* =====================================================
+   SALE
+   ===================================================== */
+
+.sale {
+    padding-bottom: 70px;
+}
+
+
+.sale-box {
+
+    /* Green background */
+    background: #a9c99c;
+
+    /* Space inside box */
+    padding: 35px 40px;
+
+    /* Rounded corners */
+    border-radius: 10px;
+
+    color: white;
+}
+
+
+.sale-box h2 {
+    font-size: 28px;
+}
+
+
+.sale-box p {
+    margin-bottom: 20px;
+}
+
+
+
+/* =====================================================
+   WHY CHOOSE US
+   ===================================================== */
+
+.why {
+
+    /* Large section */
+    padding: 90px 0;
+
+    /* Light green background */
+    background: #f2f7ef;
+}
+
+
+/* Intro text */
+.why-intro {
+
+    /* Don't let text become too wide */
+    max-width: 650px;
+
+    /* Center horizontally */
+    margin: -15px auto 50px;
+
+    text-align: center;
+
+    color: #666;
+
+    line-height: 1.7;
+}
+
+
+
+/* =====================================================
+   WHY CHOOSE US - CARDS
+   ===================================================== */
+
+.feature {
+
+    background: white;
+
+    /* Space inside card */
+    padding: 35px 25px;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    /* Same height for all cards */
+    height: 100%;
+
+    transition: 0.3s;
+}
+
+
+/* Big icon */
+.icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+
+/* Feature heading */
+.feature h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+
+/* Feature paragraph */
+.feature p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* Hover effect */
+.feature:hover {
+
+    /* Move 7px upward */
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* =====================================================
+   WHY CHOOSE US - EXTRA AREA
+   ===================================================== */
+
+.why-extra {
+
+    /* Space above this area */
+    margin-top: 70px;
+}
+
+
+/* Large image */
+.why-image {
+
+    width: 100%;
+
+    height: 380px;
+
+    /* Image fills the area */
+    object-fit: cover;
+
+    border-radius: 12px;
+}
+
+
+/* Text beside image */
+.why-text {
+    padding: 30px;
+}
+
+
+.why-text h3 {
+
+    font-size: 30px;
+
+    color: #355f2e;
+
+    margin-bottom: 20px;
+}
+
+
+.why-text p {
+    color: #666;
+    line-height: 1.8;
+}
+
+
+/* List */
+.why-text ul {
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+
+/* List items */
+.why-text li {
+    margin-bottom: 10px;
+}
+
+
+
+/* =====================================================
+   BLOG
+   ===================================================== */
+
+.blog-card {
+
+    height: 100%;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    background: white;
+
+    transition: 0.3s;
+}
+
+
+/* Blog image */
+.blog-card img {
+
+    width: 100%;
+
+    height: 200px;
+
+    object-fit: cover;
+}
+
+
+/* Blog text */
+.blog-content {
+    padding: 20px;
+}
+
+
+.blog-content h3 {
+    font-size: 18px;
+}
+
+
+.blog-content p {
+    color: #777;
+    font-size: 14px;
+}
+
+
+/* Blog link */
+.blog-content a {
+
+    color: #477a3c;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* Blog hover */
+.blog-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+footer {
+
+    background: #edf3e8;
+
+    padding: 50px 0 20px;
+}
+
+
+footer h3 {
+    font-size: 18px;
+}
+
+
+footer a {
+
+    /* Each link appears on separate line */
+    display: block;
+
+    color: #555;
+
+    text-decoration: none;
+
+    margin-bottom: 8px;
+}
+
+
+footer a:hover {
+    color: #477a3c;
+}
+
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+   ===================================================== */
+
+
+/*
+   This CSS works when screen width
+   is 768px or smaller.
+
+   Basically tablets and phones.
+*/
+
+@media (max-width: 768px) {
+
+
+    /* Smaller hero heading */
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+
+    /* Smaller hero */
+    .hero {
+        min-height: 400px;
+    }
+
+
+    /* Smaller section heading */
+    .section-title {
+        font-size: 24px;
+    }
+
+
+    /* Smaller Why Us image */
+    .why-image {
+        height: 280px;
+    }
+
+
+    /* Remove extra text padding */
+    .why-text {
+        padding: 25px 0;
+    }
+
+
+    /* Smaller Why Us heading */
+    .why-text h3 {
+        font-size: 25px;
+    }
+
+}

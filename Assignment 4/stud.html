@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Result Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body></body>
+
+    <div class="container">
+
+        <h1>Student Result Management System</h1>
+
+
+        <!-- Class Statistics -->
+
+        <div class="statistics">
+
+            <div>
+                <h3>Total Students</h3>
+                <p id="students">0</p>
+            </div>
+
+            <div>
+                <h3>Passed</h3>
+                <p id="passed">0</p>
+            </div>
+
+            <div>
+                <h3>Failed</h3>
+                <p id="failed">0</p>
+            </div>
+
+            <div>
+                <h3>Average</h3>
+                <p id="average">0%</p>
+            </div>
+
+        </div>
+
+
+        <!-- Student Details -->
+
+        <div class="form">
+
+            <h2>Student Details</h2>
+
+            <input type="text" id="name" placeholder="Student Name">
+            <input type="number" id="roll" placeholder="Roll Number">
+            <input type="number" id="m1" placeholder="Subject 1 Marks">
+            <input type="number" id="m2" placeholder="Subject 2 Marks">
+            <input type="number" id="m3" placeholder="Subject 3 Marks">
+            <input type="number" id="m4" placeholder="Subject 4 Marks">
+            <input type="number" id="m5" placeholder="Subject 5 Marks">
+
+            <p id="error"></p>
+
+            <button onclick="addStudent()">Add Result</button>
+
+        </div>
+
+
+        <!-- Class Topper -->
+
+        <div class="topper">
+
+            <h2>🏆 Class Topper</h2>
+
+            <p id="topper">No student added yet</p>
+
+        </div>
+
+
+        <!-- Student Results -->
+
+        <div class="results">
+
+            <h2>Student Results</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Roll</th>
+                        <th>Name</th>
+                        <th>Total</th>
+                        <th>Percentage</th>
+                        <th>Result</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="tableBody">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
