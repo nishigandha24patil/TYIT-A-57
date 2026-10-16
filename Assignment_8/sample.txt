@@ -1,0 +1,14 @@
+pnishigandha24_db_user
+iakFruXDfzCNDQO2
+mongodb+srv://<db_username>:<db_password>@studentcluster.qexoifl.mongodb.net/
+
+mongodb+srv://pnishigandha24_db_user:iakFruXDfzCNDQO2@studentcluster.qexoifl.mongodb.net/student_crud_db?retryWrites=true&w=majority
+
+MONGO_URI=mongodb+srv://pnishigandha24_db_user:nishhhcrud123@studentcluster.qexoifl.mongodb.net/student_crud_db?retryWrites=true&w=majority
+
+nslookup -type=SRV _mongodb._tcp.studentcluster.qexoifl.mongodb.net 8.8.8.8
+
+
+
+
+nishhhcrud123

@@ -1,0 +1,41 @@
+*{
+    font-family: "helvetica";
+}
+body{
+   background-image: url("image.png");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center;
+   background-size: cover;
+}
+h1{
+    color: #820c74;
+    font-family: "Press Start 2P";
+    background: linear-gradient(to left, pink, lightgreen);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+h2{
+    text-decoration: black dotted underline;
+    background: linear-gradient(to right, rgb(210, 228, 212), lightgreen);
+}
+#p1 {
+    
+    font-size: 20px;
+    border-bottom-style: dashed; /*dashed,dotted, double, ridge, inset, outset, groove*/
+    border-top-style: dashed;
+    border-left-style: double;
+    border-width: 5px;
+    padding: 10px;
+    border-color: #820c74;
+    background: linear-gradient(to right, rgb(198, 233, 247), rgb(48, 194, 194));
+}
+#p2 {
+    font-size: 20px;
+    border-style: outset;
+    border-color: gold;
+    border-width: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    background: linear-gradient(skyblue, lightgreen);
+}
